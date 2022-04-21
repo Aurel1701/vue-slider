@@ -2,7 +2,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
-            selectElement = 0,
+            selectElements = 0,
             elements: [
                     {
                         image: 'img/Svezia.jpg',
@@ -36,20 +36,7 @@ const app = new Vue(
             
         },
         methods: {
-            prevImage() {
-                if (this.activeImage === 0) {
-                    this.activeImage = this.movie.images.lenght
-
-                }
-                this.activeImage--
-            },
-
-            nextImage() {
-                if (this.nextImage === this.movie.images.lenght) {
-
-
-                }
-            }
+            
 
 
         }
