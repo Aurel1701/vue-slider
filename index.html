@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue-slider</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -14,16 +15,21 @@
             
             <div class="first-card">
                 <img :src="elements[ selectElement].image" alt="">
-                <h3>{{ elements.image.title}}</h3>
-                <p>{{ elements.image.text }}</p>
+                <h2>{{ elements[ selectElement].title }}</h2>
+                <p>{{ elements[ selectElement].text }}</p>
             </div>
             <div class="thumbnails">
+                <div>
+                    <i class="fa-solid fa-arrow-up-long next1" @click="next"></i>
+                </div>
                 <img src="./img/02.jpg" alt="">
-
                 <img src="./img/03.jpg" alt="">
                 <img src="./img/04.jpg" alt="">
                 <img src="./img/05.jpg" alt="">
                 <img src="./img/Svezia.jpg" alt="">
+                <div>
+                    <i class="fa-solid fa-arrow-down prev1" @click="prev"></i>
+                </div>
             </div>
 
         </div>

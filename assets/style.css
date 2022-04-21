@@ -12,11 +12,29 @@
     height: 100%;
     
 }
-.first-card h3, p{
+.first-card h2, p{
     position: absolute;
     right: 10px;
-    bottom: 50px;
+    bottom: 80px;
     color:white;
+    
+}
+.first-card  p{
+    bottom: 20px;
+    text-align: right;
+    
+    
+}
+.next1{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    
+}
+.prev1{
+    position: absolute;
+    bottom:0;
+    right: 50%;
     
 }
 .container{
@@ -34,4 +52,5 @@
 }
 .thumbnails{
     height: 100%;
+    position: relative;
 }

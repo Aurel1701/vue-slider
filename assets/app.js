@@ -32,8 +32,15 @@ const app = new Vue(
                 ],
                 
         },
-        
+
         methods: {
+            next (){
+               this.selectElement++
+
+            },
+            prev() {
+                this.selectElement--
+            }
             
 
 
