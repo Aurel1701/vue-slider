@@ -36,13 +36,21 @@ const app = new Vue(
         methods: {
             next (){
                this.selectElement++
+               if (this.selectElement == this.elements.length) {
+                this.selectElement = 0;
+                
+            }
+               
+            
 
             },
             prev() {
                 this.selectElement--
+                if (this.selectElement == -1) {
+                    this.selectElement = this.elements.length - 1;
+                }
             }
             
-
 
         }
 
