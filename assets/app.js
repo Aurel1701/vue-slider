@@ -2,8 +2,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
-            
-            selectImage = 0,
+            selectElement = 0,
             elements: [
                     {
                         image: 'img/Svezia.jpg',
