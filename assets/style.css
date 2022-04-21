@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-card{
+    position: relative;
+    height: 430px;
+}
+.first-card img{
+    width: 750px;
+    height: 100%;
+    
+}
+.first-card h3, p{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    color:white;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    height: 430px;
+}
+.thumbnails img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 155px;
+
+}
+.thumbnails{
+    height: 100%;
+}
